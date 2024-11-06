@@ -93,16 +93,16 @@
 
         function removeAnimal() {
             const animalInput = document.getElementById('Name');
-            const animalName = animalInput.value.trim(); 
+            const animalName = animalInput.value.trim();
 
-            const animalIndex = Animal.indexOf(animalName); 
+            const animalIndex = Animal.indexOf(animalName);
 
-            if (animalIndex > -1) { 
-                Animal.splice(animalIndex, 1); 
-                animalInput.value = ""; 
-                loadAnimal(); 
+            if (animalIndex > -1) {
+                Animal.splice(animalIndex, 1);
+                animalInput.value = "";
+                loadAnimal();
             } else {
-                alert("Animal not found!"); 
+                alert("Animal not found!");
             }
         }
     </script>
